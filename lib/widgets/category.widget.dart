@@ -10,16 +10,16 @@ class Category extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(top: 20, bottom: 20),
+      padding: EdgeInsets.only(left: 20, right: 20),
       child: Stack(
-        // fit: StackFit.passthrough,
+        fit: StackFit.passthrough,
         overflow: Overflow.visible,
         alignment: Alignment.center,
         children: [
           Positioned(
-            top: 70,
-            height: 160,
-            width: 300,
+            top: 90,
+            height: 150,
+            width: 230,
             child: Container(
               decoration: BoxDecoration(
                 color: Color(0xFF303038),
@@ -30,11 +30,11 @@ class Category extends StatelessWidget {
             ),
           ),
           Container(
-              margin: EdgeInsets.only(bottom: 30),
-              width: 210,
+              margin: EdgeInsets.only(bottom: 40),
+              width: 200,
               child: Image.asset(image)),
           Padding(
-            padding: EdgeInsets.only(top: 190),
+            padding: EdgeInsets.only(top: 200),
             child: Text(
               title,
               style: TextStyle(

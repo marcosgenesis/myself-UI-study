@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: Color(0xFF272730),
+        accentColor: Color(0xFF7B0BEA),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: HomePage(),
